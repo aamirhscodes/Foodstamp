@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food Stamp - Restaurant</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1 user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.transitions.css">
+	<link rel="stylesheet" href="css/fakeLoader.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+<body>
+
+	<!-- navbar top -->
+	<div class="navbar-top">
+
+		<img src="img/logo.png" class="img-fluid" width="200px" />
+	</div>
+	<!-- end navbar top -->
+
+	<!-- login -->
+	<div class="pages section" style="margin-top:200px !important;">
+		<div class="container">
+			<div class="pages-head">
+				<h3>Please Login Below</h3>
+			</div>
+			<div class="login">
+				<div class="row">
+					<form class="col s12">
+						<div class="input-field">
+							<input type="text" class="validate" id="email" placeholder="Username" required>
+						</div>
+						<div class="input-field">
+							<input type="password" class="validate" id="password" placeholder="Password" required>
+						</div>
+						<a href="#" id="loginButton" class="button-default text-center" style="padding:15px;width:100%;text-align:center;font-size:20px;">Login</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end login -->
+
+	<!-- loader -->
+	<div id="fakeLoader"></div>
+	<!-- end loader -->
+
+
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/fakeLoader.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	if (localStorage.getItem('restaurant_id')!=null)
+	{
+		window.location.href='index.html';
+	}
+
+	$('#loginButton').on('click', function(e){
+		e.preventDefault();
+		var data_to_post = {
+	    'email': $('#email').val(),
+	    'password': $('#password').val(),
+	  };
+	  $.ajax({
+	       type:'POST',
+	       url:"https://admin.foodstamp.pk/restaurant/login",
+	       data:data_to_post,
+	       success:function(data){
+					 if (data.Success == true)
+					 {
+						 localStorage.setItem('restaurant_id', data.Restaurant.id);
+						 window.location.href='index.html';
+					 }
+					 else
+					 {
+						 $('.login').append('<div class="alert_msg"><div class="alert alert-warning text-center">'+data.Message+'</div></div>');
+						 setTimeout(function(){
+		                $(".alert_msg").fadeOut('slow');
+		                $('.alert_msg').html('');
+		            },5000);
+					 }
+	       }
+	    });
+	});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 25 Jul 2022 22:11:47 at http://ngetemplates.com/dark/dark/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://ngetemplates.com/dark/dark/index.html -O1 "G:\Templates\Foodtsamp-Mobile" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Thin.eot (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Thin.eot? (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Thin.woff2 (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Thin.woff (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Thin.ttf (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Light.eot (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Light.eot? (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Light.woff2 (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Light.woff (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Light.ttf (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Regular.eot (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Regular.eot? (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Regular.woff2 (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Regular.woff (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Regular.ttf (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Medium.eot (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Medium.eot? (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Medium.woff2 (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Medium.woff (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Medium.ttf (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Bold.eot (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Bold.eot? (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Bold.woff2 (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Bold.woff (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/fonts/roboto/Roboto-Bold.ttf (from ngetemplates.com/dark/dark/css/materialize.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/css/grabbing.png (from ngetemplates.com/dark/dark/css/owl.carousel.css)
+22:13:13	Error: 	"Not Found" (404) at link ngetemplates.com/dark/dark/css/AjaxLoader.gif (from ngetemplates.com/dark/dark/css/owl.theme.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 35 seconds : 103 links scanned, 75 files written (3009698 bytes overall) [2332414 bytes received at 24551 bytes/sec], 1055083 bytes transferred using HTTP compression in 35 files, ratio 30%, 4.6 requests per connection
+(27 errors, 0 warnings, 0 messages)
