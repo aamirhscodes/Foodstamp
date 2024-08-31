@@ -55,7 +55,20 @@
                                                       <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                       <div class="dropdown-menu dropdown-menu-right">
                                                           <ul class="link-list-opt no-bdr">
+                                                              <li><a href="{{route('dashboard')}}/{{$dat->qrpath}}" target="_blank"><em class="icon ni ni-eye"></em><span>View QR</span></a></li>
                                                               <li><a href="{{route('Stamp.edit', $dat->id)}}"><em class="icon ni ni-eye"></em><span>Edit Details</span></a></li>
+                                                              <li>
+                                                                  <a href="#" onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this item?')) { document.getElementById('delete-form-{{ $dat->id }}').submit(); }">
+                                                                      <em class="icon ni ni-trash"></em><span>Remove</span>
+                                                                  </a>
+
+                                                                  <!-- Hidden Form to Submit the DELETE Request -->
+                                                                  <form id="delete-form-{{ $dat->id }}" action="{{ route('Stamp.destroy', $dat->id) }}" method="POST" style="display: none;">
+                                                                      @csrf
+                                                                      @method('DELETE')
+                                                                  </form>
+                                                              </li>
+
                                                           </ul>
                                                       </div>
                                                   </div>
